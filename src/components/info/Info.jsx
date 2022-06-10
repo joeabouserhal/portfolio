@@ -7,18 +7,18 @@ const linkStyle = "hover:text-slate-500 transition hover:scale-110 cursor-pointe
 const Info = () => {
     return (
         <div>
-            <div className='justify-center text-center flex-col lg:pt-7'>
-                <p className='text-center font-mono text-slate-400 text-2xl p-1 pt-16'>I am</p>
-                <h1 className='text-center font-mono text-white text-9xl md:text-5xl p-2'>Joe Abou Serhal</h1>
+            <div className='justify-center text-center flex-col lg:pt-1'>
+                <p className='text-center font-mono text-slate-400 text-md p-1 pt-16'>I am</p>
+                <h1 className='text-center font-mono text-white text-4xl md:text-4xl p-1'>Joe Abou Serhal</h1>
             </div>
-            <div className='hero container flex mx-auto justify-center pt-6 lg:pt-10'>
-                <img className="rounded-full w-72 lg:w-96" src={ProfilePicture} />
+            <div className='hero container flex mx-auto justify-center pt-16 lg:pt-9'>
+                <img className="rounded-full w-72 lg:w-72" src={ProfilePicture} />
             </div>
-            <div className='justify-center text-center pt-12 lg:pt-12'>
+            <div className='justify-center text-center pt-20 lg:pt-8'>
                 <ul className='justify-center flex gap-4'>
-                    <li/><a href='https://www.instagram.com/joe.abou.serhal/' target="_blank"><BsInstagram size="2.5rem" className={linkStyle}/></a>
-                    <li/><a href='https://github.com/joeabouserhal' target="_blank"><BsGithub size="2.5rem" className={linkStyle}/></a>
-                    <li/><a href='https://www.linkedin.com/in/joe-abou-serhal-9b90361bb/'><BsLinkedin size="2.5rem" className={linkStyle}/></a>
+                    <li/><a href='https://www.instagram.com/joe.abou.serhal/' target="_blank"><BsInstagram size="2rem" className={linkStyle}/></a>
+                    <li/><a href='https://github.com/joeabouserhal' target="_blank"><BsGithub size="2rem" className={linkStyle}/></a>
+                    <li/><a href='https://www.linkedin.com/in/joe-abou-serhal-9b90361bb/'><BsLinkedin size="2rem" className={linkStyle}/></a>
                 </ul>
             </div>
             <div className='description justify-center content-center pt-80 lg:pt-56'>

@@ -2,14 +2,14 @@ import React from 'react'
 import { GrMenu } from 'react-icons/gr'
 import {FiMenu} from 'react-icons/fi'
 
-var navBarItemStyle = 'navbar-item flex text-lg font-mono p-0.5 text-white cursor-pointer hover:text-slate-500 transition hover:scale-125';
+var navBarItemStyle = 'navbar-item flex text-md font-mono p-0.5 text-white cursor-pointer hover:text-slate-500 transition hover:scale-125';
 
 const Header = () => {
     return (
         <header className='header'>
-            <nav className='navbar flex p-6 gap-20 '>
+            <nav className='navbar flex p-4 gap-20 '>
                 <div className='title'>
-                    <p className='text-2xl font-mono text-white'>Portfolio.</p>
+                    <p className='text-xl font-mono text-white'>Portfolio.</p>
                 </div>
                 <div className='invisible md:visible lg:visible absolute right-5'>
                     <ul className='pr-2  flex gap-5'>
