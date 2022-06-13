@@ -3,8 +3,6 @@ import { GrMenu } from 'react-icons/gr'
 import { FiMenu, FiX } from 'react-icons/fi'
 
 var navBarItemStyle = 'navbar-item flex text-md font-mono p-0.5 text-white cursor-pointer hover:text-slate-500 transition hover:scale-125';
-var mobileNavBarItemStyle = 'navbar-item flex text-md font-mono p-0.5 text-white';
-
 
 const Header = () => {
 
@@ -31,10 +29,10 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className={(navBarOpen ? 'visible md:hidden flex justify-center mx-auto' : 'hidden')}>
+                <div className={(navBarOpen ? 'visible md:hidden justify-center' : 'hidden')}>
                     <ul className='flex flex-col gap-2 items-center justify-center'>
-                        <li /><a onClick={scrollToAboutMe} className={mobileNavBarItemStyle}>About Me.</a>
-                        <li /><a className={mobileNavBarItemStyle}>Contact Me.</a>
+                        <li /><a onClick={scrollToAboutMe} className={navBarItemStyle}>About Me.</a>
+                        <li /><a className={navBarItemStyle}>Contact Me.</a>
                     </ul>
                 </div>
             </nav>
