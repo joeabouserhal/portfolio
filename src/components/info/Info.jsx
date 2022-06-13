@@ -1,6 +1,6 @@
 import React from 'react'
 import ProfilePicture from '../../assets/Profile Picture.jpeg'
-import {BsInstagram, BsGithub, BsLinkedin} from 'react-icons/bs'
+import {BsInstagram, BsGithub, BsLinkedin,BsFillFilePersonFill} from 'react-icons/bs'
 
 const linkStyle = "hover:text-slate-500 transition hover:scale-110 cursor-pointer";
 
@@ -18,12 +18,13 @@ const Info = () => {
                 <ul className='justify-center flex gap-4'>
                     <li/><a href='https://www.instagram.com/joe.abou.serhal/' target="_blank"><BsInstagram size="2rem" className={linkStyle}/></a>
                     <li/><a href='https://github.com/joeabouserhal' target="_blank"><BsGithub size="2rem" className={linkStyle}/></a>
-                    <li/><a href='https://www.linkedin.com/in/joe-abou-serhal-9b90361bb/'><BsLinkedin size="2rem" className={linkStyle}/></a>
+                    <li/><a href='https://www.linkedin.com/in/joe-abou-serhal-9b90361bb/'><BsLinkedin size="2rem" className={linkStyle}/></a>   
+                    <li className='border border-white'/><a href='https://drive.google.com/file/d/1UB8CrplwY9lxhwdRPXBT-1RS-eAPrVAb/view?usp=sharing' target="_blank" className={linkStyle+'border border-white flex gap-2 font-mono'}><BsFillFilePersonFill size="2rem" className={linkStyle}/>My CV</a>
                 </ul>
             </div>
             <div className='description justify-center content-center pt-80 lg:pt-56'>
                 <p id="aboutMe" className='text-md font-mono bg-slate-700 text-slate-300 mx-auto rounded-2xl p-5 h-50 max-w-sm shadow-2xl lg:text-xl'>
-                    "I am a full Computer Science student at Beirut Arab University.{"\n"}
+                    "I'm a Computer Science student at Beirut Arab University.{"\n"}
                     I'm always looking for new challenges and opportunities to learn new things."
                 </p>
             </div>
