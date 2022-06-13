@@ -12,26 +12,29 @@ const Header = () => {
 
     return (
         <header className='header'>
-            <nav className='relative navbar flex p-4 gap-20 '>
-                <div className='title'>
-                    <p className='text-xl font-mono text-white'>Portfolio.</p>
+            <nav className='relative navbar flex flex-col p-4 gap-20 '>
+                <div className='flex'>
+                    <div className='title'>
+                        <p className='text-xl font-mono text-white'>Portfolio.</p>
+                    </div>
+                    <div className='invisible md:visible lg:visible absolute right-5'>
+                        <ul className='flex gap-5'>
+                            <GrMenu className='right-2 block md:hidden lg:hidden' />
+                            <li /><a onClick={scrollToAboutMe} className={navBarItemStyle}>About Me.</a>
+                            <li /><a className={navBarItemStyle}>Contact Me.</a>
+                        </ul>
+                    </div>
+                    <div className='flex justify-end'>
+                        {navBarOpen ?
+                            <FiX size='2rem' color='white' className=' visible md:invisible lg:invisible absolute right-5 cursor-pointer' onClick={() => setNavBarOpen(!navBarOpen)} /> :
+                            <FiMenu size='2rem' color='white' className=' visible md:invisible lg:invisible absolute right-5 cursor-pointer' onClick={() => setNavBarOpen(!navBarOpen)} />}
+                    </div>
                 </div>
-                <div className='invisible md:visible lg:visible absolute right-5'>
-                    <ul className='pr-2  flex gap-5'>
-                        <GrMenu className='right-2 block md:hidden lg:hidden' />
-                        <li /><a onClick={scrollToAboutMe} className={navBarItemStyle}>About Me.</a>
-                        <li /><a className={navBarItemStyle}>Contact Me.</a>
-                    </ul>
-                </div>
-                <div className='flex justify-end'>
-                    {navBarOpen ?
-                        <FiX size='2rem' color='white' className=' visible md:invisible lg:invisible absolute right-5 cursor-pointer' onClick={() => setNavBarOpen(!navBarOpen)} /> :
-                        <FiMenu size='2rem' color='white' className=' visible md:invisible lg:invisible absolute right-5 cursor-pointer' onClick={() => setNavBarOpen(!navBarOpen)} />}
-                </div>
-                <div className={(navBarOpen ? 'justify-center items-center pt-10' : 'hidden')}>
-                    <ul className='flex flex-col gap-2 items-center justify-center self-center'>
-                        <li /><a onClick={scrollToAboutMe} className={mobileNavBarItemStyle+'justify-center text-center'}>About Me.</a>
-                        <li /><a className={mobileNavBarItemStyle+'justify-center text-center'}>Contact Me.</a>
+
+                <div className={(navBarOpen ? 'visible md:hidden flex justify-center mx-auto' : 'hidden')}>
+                    <ul className='flex flex-col gap-2 items-center justify-center'>
+                        <li /><a onClick={scrollToAboutMe} className={mobileNavBarItemStyle}>About Me.</a>
+                        <li /><a className={mobileNavBarItemStyle}>Contact Me.</a>
                     </ul>
                 </div>
             </nav>
