@@ -22,12 +22,12 @@ const Info = () => {
                     <li className='border border-white'/><a href='https://drive.google.com/file/d/1UB8CrplwY9lxhwdRPXBT-1RS-eAPrVAb/view?usp=sharing' target="_blank" className={linkStyle+'border border-white flex gap-2 font-mono'}><BsFillFilePersonFill size="2rem" className={linkStyle}/>My CV</a>
                 </ul>
             </div>
-            <div className='flex justify-center p-28'>
+            <div id="aboutMe" className='flex justify-center p-28'>
                 <BsChevronDown size='1.5rem'/>
             </div>
-            <div className='container justify-center'>
-                <p id="aboutMe" className='container text-md font-mono bg-slate-700 text-slate-300 mx-auto rounded-2xl p-5 h-50 max-w-sm shadow-2xl lg:text-xl'>
-                    "I'm a Computer Science student at Beirut Arab University.{"\n"}
+            <div className='flex justify-center'>
+                <p className='container flex text-md font-mono bg-slate-700 text-slate-300 mx-auto rounded-2xl p-4 max-w-md shadow-2xl lg:text-xl'>
+                    "I'm a Computer Science student at Beirut Arab University.
                     I'm always looking for new challenges and opportunities to learn new things."
                 </p>
             </div>
