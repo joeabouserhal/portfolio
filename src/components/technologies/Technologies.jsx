@@ -10,7 +10,7 @@ const Technologies = () => {
             <div className='title flex justify-center'>
                 <h1 className='text-3xl font-mono'>Languages and Tools</h1>
             </div>
-            <div className='flex flex-col gap-x-10 lg:flex-row pt-16'>
+            <div className='flex flex-col gap-y-10 lg:flex-row pt-16'>
                 <div className={containerStyle}>
                     <h3 className='text-2xl p-2'>Languages</h3>
                     <ul className='text-base'>
