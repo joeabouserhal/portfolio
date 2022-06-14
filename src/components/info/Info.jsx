@@ -1,14 +1,15 @@
 import React from 'react'
 import ProfilePicture from '../../assets/Profile Picture.jpeg'
 import {BsInstagram, BsGithub, BsLinkedin,BsFillFilePersonFill,BsChevronDown} from 'react-icons/bs'
+import './Info.css'
 
 const linkStyle = "hover:text-slate-500 transition hover:scale-110 cursor-pointer";
 
 const Info = () => {
     return (
-        <div>
+        <div className='info'>
             <div className='justify-center text-center flex-col'>
-                <p className='text-center font-mono text-slate-400 text-md p-1 pt-20 sm:pt-10'>I am</p>
+                <p className='text-center font-mono text-slate-400 text-md p-1 pt-10'>I am</p>
                 <h1 className='text-center font-mono text-white text-4xl md:text-4xl p-1'>Joe Abou Serhal</h1>
             </div>
             <div className='hero container flex mx-auto justify-center pt-16 lg:pt-9'>

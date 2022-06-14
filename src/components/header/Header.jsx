@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { GrMenu } from 'react-icons/gr'
 import { FiMenu, FiX } from 'react-icons/fi'
+import './Header.css'
 
 var navBarItemStyle = 'navbar-item flex text-md font-mono p-0.5 text-white cursor-pointer hover:text-slate-500 transition hover:scale-125';
 
@@ -19,7 +20,7 @@ const Header = () => {
                         <ul className='flex gap-5'>
                             <GrMenu className='right-2 block md:hidden lg:hidden' />
                             <li /><a onClick={scrollToAboutMe} className={navBarItemStyle}>About Me.</a>
-                            <li /><a className={navBarItemStyle}>Contact Me.</a>
+                            <li /><a onClick={scrollToContactMe} className={navBarItemStyle}>Contact Me.</a>
                         </ul>
                     </div>
                     <div className='flex justify-end'>
@@ -32,7 +33,7 @@ const Header = () => {
                 <div className={(navBarOpen ? 'visible md:hidden justify-center' : 'hidden')}>
                     <ul className='flex flex-col gap-2 items-center justify-center'>
                         <li /><a onClick={scrollToAboutMe} className={navBarItemStyle}>About Me.</a>
-                        <li /><a className={navBarItemStyle}>Contact Me.</a>
+                        <li /><a onClick={scrollToContactMe} className={navBarItemStyle}>Contact Me.</a>
                     </ul>
                 </div>
             </nav>
@@ -44,4 +45,10 @@ function scrollToAboutMe() {
     const elementToView = document.getElementById("aboutMe");
     elementToView.scrollIntoView();
 }
+
+function scrollToContactMe() {
+    const elementToView = document.getElementById("contactMe");
+    elementToView.scrollIntoView();
+}
+
 export default Header

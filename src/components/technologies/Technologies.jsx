@@ -7,7 +7,7 @@ const Technologies = () => {
     const innerContainerStyle = 'container text-md font-mono bg-slate-700 text-slate-300 mx-auto h-auto text-center rounded-2xl p-5 h-50 max-w-sm shadow-2xl';
 
     return (
-        <div>
+        <div className='technologies'>
             <div className='title flex justify-center'>
                 <h1 className='text-3xl font-mono'>Languages and Tools</h1>
             </div>

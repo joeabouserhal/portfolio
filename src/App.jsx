@@ -7,10 +7,10 @@ function App() {
 
   return (
     <div className="App">
-      <Header/>
-      <Info/>
-      <Technologies/>
-      <Footer/>
+      <Header />
+      <Info />
+      <Technologies />
+      <Footer />
     </div>
   )
 }
