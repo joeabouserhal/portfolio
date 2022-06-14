@@ -1,6 +1,7 @@
 # Portfolio.
 
 This is my portfolio website that i made using Vite, React and TailwindCSS
+which is hosted on https://joeabouserhal.netlify.app/
 
 # How to run locally
 
