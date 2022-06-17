@@ -1,4 +1,5 @@
 import React from 'react'
+import { BsChevronDown } from 'react-icons/bs'
 import './Technologies.css'
 
 const Technologies = () => {
@@ -11,7 +12,7 @@ const Technologies = () => {
             <div className='title flex justify-center'>
                 <h1 className='text-3xl font-mono'>Languages and Tools</h1>
             </div>
-            <div className='flex flex-col gap-y-10 lg:flex-row pt-16 lg:mr-12 lg:ml-12 lg:gap-x-0'>
+            <div className='flex flex-col gap-y-10 pt-16 lg:flex-row lg:justify-around lg:gap-x-0 xl:justify-around'>
                 <div className={containerStyle}>
                     <h3 className='text-2xl p-2 underline-dotted'>Languages</h3>
                     <ul className='text-base'>
@@ -28,7 +29,7 @@ const Technologies = () => {
                     </ul>
                 </div>
                 <div className={containerStyle}>
-                    <h3 className='text-2xl p-2 underline-dotted'>Tools</h3>
+                    <h3 className='text-2xl p-2 underline-dotted'>IDEs / Text Editors</h3>
                     <ul className='text-base'>
                         <li>Visual Studio Code</li>
                         <li>PyCharm</li>
@@ -38,6 +39,17 @@ const Technologies = () => {
                         <li>Android Studio</li>
                     </ul>
                 </div>
+                <div className={containerStyle}>
+                    <h3 className='text-2xl p-2 underline-dotted'>Other Useful Programs</h3>
+                    <ul className='text-base'>
+                        <li>scrcpy</li>
+                        <li>Postman</li>
+                        <li>Notion</li>
+                    </ul>
+                </div>
+            </div>
+            <div className='flex justify-center p-28'>
+                <BsChevronDown size='1.5rem' />
             </div>
         </div>
     )
