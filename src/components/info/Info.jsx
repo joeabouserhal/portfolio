@@ -11,8 +11,8 @@ const Info = () => {
     return (
         <div className='info'>
             <div className='justify-center text-center flex-col'>
-                <p className='text-center font-mono text-slate-400 text-md p-1 pt-10'>I am</p>
-                <Typical className='text-center font-mono text-white text-4xl md:text-4xl p-1'
+                <p className='text-center font-mono text-slate-400 text-md p-1 pt-10'>Hi, I am</p>
+                <Typical className='text-center font-mono text-white text-3xl lg:text-4xl md:text-4xl p-1'
                     steps={['Joe Abou Serhal 👋', 500]}
                     wrapper="p"
                 />
