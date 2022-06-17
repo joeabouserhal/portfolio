@@ -1,0 +1,10 @@
+.technologies {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.underline-dotted {
+    border-bottom: 5px solid white;
+    border-bottom-style: dotted;
+    margin-bottom:1rem;
+}

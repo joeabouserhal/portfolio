@@ -4,7 +4,7 @@
 
 html, body {
   scroll-behavior: smooth;
-  background: rgba(30, 41, 59, 1);
+  background: rgb(29, 40, 58);
   background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
   padding: 0;
   margin: 0;
@@ -19,4 +19,17 @@ html, body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+::-webkit-scrollbar {
+  width:0.4rem;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background: white;
 }
