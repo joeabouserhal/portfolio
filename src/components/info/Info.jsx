@@ -29,7 +29,7 @@ const Info = () => {
                 </ul>
             </div>
             <div id="aboutMe" className='flex justify-center p-28'>
-                <BsChevronDown size='1.5rem' />
+                <BsChevronDown size='1.5rem' onClick={scrollToAboutMe}/>
             </div>
             <div className='flex justify-center'>
                 <p className='container flex text-md font-mono bg-slate-700 text-slate-300 mx-auto rounded-2xl p-4 max-w-md shadow-2xl lg:text-xl'>
@@ -42,6 +42,11 @@ const Info = () => {
             </div>
         </div>
     )
+}
+
+function scrollToAboutMe() {
+    const elementToView = document.getElementById("aboutMe");
+    elementToView.scrollIntoView();
 }
 
 export default Info
