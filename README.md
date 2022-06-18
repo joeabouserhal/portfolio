@@ -7,8 +7,11 @@ which is hosted on https://joeabouserhal.netlify.app/
 
 upon cloning the repo run the following command to install all dependencies
 ```shell
-npm install
-```
+# using --force due to some dependencies being incompatible with React 18
+npm install --force
+``` 
+
+
 after the dependencies are installed run this command to start the local server
 ```shell
 # for dev build
