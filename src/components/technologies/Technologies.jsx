@@ -11,7 +11,7 @@ const Technologies = () => {
             <div className='title flex justify-center'>
                 <h1 className='text-3xl font-mono'>Languages and Tools</h1>
             </div>
-            <div className='flex flex-col gap-y-10 pt-16 lg:flex-row lg:justify-around lg:gap-x-0 xl:justify-around'>
+            <div className=' flex flex-col gap-y-10 pt-16 lg:flex-col lg:justify-around lg:gap-x-0 xl:flex-row xl:justify-around'>
                 <div className={containerStyle}>
                     <h3 className='text-2xl p-2 underline-dotted'>Languages</h3>
                     <ul className='text-base'>

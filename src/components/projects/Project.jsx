@@ -1,8 +1,26 @@
 import React from "react";
+import './Project.css'
 
-const Project = () => {
+const Project = ({ projectName, projectDescription, projectImageURL, technologies }) => {
+
+    const containerStyle = 'container font-mono bg-slate-700 text-slate-300 mx-auto h-auto text-center rounded-2xl p-5 max-w-sm shadow-2xl lg:text-xl';
+
     return (
-        <div>Project</div>
+        <div className="project">
+            <div className={containerStyle}>
+                <div className="w-30 h-30 rounded-xl flex justify-center">
+                    <img className="rounded-xl" src={projectImageURL}/>
+                </div>
+                <h3 className="title text-2xl p-2 font-mono underline-dotted">{projectName}</h3>
+                <p className="description text-base">
+                    {projectDescription}
+                </p>
+                <p className="underline-dotted p-2"></p>
+                <ul className="text-base flex grid-flow-row gap-2 items-center justify-center">
+                    {technologies.map(tech => <li className="container bg-slate-600 h-auto w-auto p-2 text-sm rounded-xl" key={tech}>{tech}</li>)}
+                </ul>
+            </div>
+        </div>
     )
 }
 
