@@ -3,7 +3,7 @@ import './Project.css'
 
 const Project = ({ projectName, projectDescription, projectImageURL, technologies, projectURL }) => {
 
-    const containerStyle = 'container font-mono bg-slate-700 text-slate-300 mx-auto h-auto text-center rounded-2xl p-5 max-w-sm shadow-2xl lg:text-xl';
+    const containerStyle = 'container font-mono bg-slate-700 text-slate-300 mx-auto w-auto h-auto text-center rounded-2xl p-5 max-w-sm shadow-2xl lg:w-80 lg:text-xl';
 
     return (
         <div className="project">
