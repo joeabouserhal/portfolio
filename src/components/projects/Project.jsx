@@ -1,7 +1,7 @@
 import React from "react";
 import './Project.css'
 
-const Project = ({ projectName, projectDescription, projectImageURL, technologies }) => {
+const Project = ({ projectName, projectDescription, projectImageURL, technologies, projectURL }) => {
 
     const containerStyle = 'container font-mono bg-slate-700 text-slate-300 mx-auto h-auto text-center rounded-2xl p-5 max-w-sm shadow-2xl lg:text-xl';
 
@@ -9,7 +9,9 @@ const Project = ({ projectName, projectDescription, projectImageURL, technologie
         <div className="project">
             <div className={containerStyle}>
                 <div className="w-30 h-30 rounded-xl flex justify-center">
-                    <img className="rounded-xl" src={projectImageURL}/>
+                    <a href={projectURL} target="_blank">
+                        <img className="rounded-xl transition hover:scale-90" src={projectImageURL} />
+                    </a>
                 </div>
                 <h3 className="title text-2xl p-2 font-mono underline-dotted">{projectName}</h3>
                 <p className="description text-base">

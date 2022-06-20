@@ -16,10 +16,12 @@ const Projects = () => {
             <div className='projects flex flex-col gap-y-10 pt-16 lg:flex-col lg:justify-around lg:gap-x-0 xl:flex-row xl:justify-around'>
                 <Project projectName="Pick Me Up" projectDescription="A carpooling and delivery mobile app based in Lebanon."
                 technologies={['Flutter', 'OSM', 'Firebase']}
-                projectImageURL={PickMeUpPhoto} />
+                projectImageURL={PickMeUpPhoto}
+                projectURL="https://github.com/joeabouserhal/pickmeup" />
                 <Project projectName="Portfolio" projectDescription="This current portfolio website."
                 technologies={['Vite', 'React', 'TailwindCSS']}
-                projectImageURL={PortfolioPhoto2} />
+                projectImageURL={PortfolioPhoto2}
+                projectURL="https://github.com/joeabouserhal/portfolio" />
             </div>
         </div>
     )
