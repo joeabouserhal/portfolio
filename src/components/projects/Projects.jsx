@@ -3,6 +3,7 @@ import Project from './Project'
 import PickMeUpPhoto from '../../assets/PickMeUp.png'
 import PortfolioPhoto from '../../assets/Portfolio.png'
 import PortfolioPhoto2 from '../../assets/Portfolio no Photo.png'
+import { BsChevronDown } from 'react-icons/bs'
 
 import './Projects.css'
 
@@ -22,6 +23,9 @@ const Projects = () => {
                 technologies={['Vite', 'React', 'TailwindCSS']}
                 projectImageURL={PortfolioPhoto2}
                 projectURL="https://github.com/joeabouserhal/portfolio" />
+            </div>
+            <div className='flex justify-center p-28'>
+                <BsChevronDown size='1.5rem' />
             </div>
         </div>
     )
