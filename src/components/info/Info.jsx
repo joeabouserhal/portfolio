@@ -28,8 +28,8 @@ const Info = () => {
                     <li className='border border-white' /><a href='https://drive.google.com/file/d/1MmOSuEc3MFKFfCdN0Xgvbb92gRJl89R6/view?usp=sharing' target="_blank" className={linkStyle + 'border border-white flex gap-2 font-mono'}><BsFillFilePersonFill size="2rem" className={linkStyle} />My CV</a>
                 </ul>
             </div>
-            <div id="aboutMe" className='flex justify-center p-28'>
-                <BsChevronDown size='1.5rem' onClick={scrollToAboutMe}/>
+            <div className='flex justify-center p-28'>
+                <BsChevronDown id="aboutMe" size='1.5rem' onClick={scrollToAboutMe}/>
             </div>
             <div className='flex justify-center'>
                 <p className='container flex text-md font-mono bg-slate-700 text-slate-300 mx-auto rounded-2xl p-4 max-w-md shadow-2xl lg:text-xl'>
@@ -38,7 +38,7 @@ const Info = () => {
                 </p>
             </div>
             <div className='flex justify-center p-28'>
-                <BsChevronDown size='1.5rem' />
+                <BsChevronDown id="technologies" size='1.5rem' onClick={scrollToTechnologies}/>
             </div>
         </div>
     )
@@ -46,6 +46,11 @@ const Info = () => {
 
 function scrollToAboutMe() {
     const elementToView = document.getElementById("aboutMe");
+    elementToView.scrollIntoView();
+}
+
+function scrollToTechnologies() {
+    const elementToView = document.getElementById("technologies");
     elementToView.scrollIntoView();
 }
 

@@ -48,10 +48,16 @@ const Technologies = () => {
                 </div>
             </div>
             <div className='flex justify-center p-28'>
-                <BsChevronDown size='1.5rem' />
+                <BsChevronDown id="projects" size='1.5rem' onClick={scrollToProjects}/>
             </div>
         </div>
     )
 }
 
+function scrollToProjects() {
+    const elementToView = document.getElementById("projects");
+    elementToView.scrollIntoView();
+}
+
 export default Technologies
+

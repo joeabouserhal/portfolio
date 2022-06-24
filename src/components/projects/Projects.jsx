@@ -25,10 +25,15 @@ const Projects = () => {
                 projectURL="https://github.com/joeabouserhal/portfolio" />
             </div>
             <div className='flex justify-center p-28'>
-                <BsChevronDown size='1.5rem' />
+                <BsChevronDown id='contactMe' size='1.5rem' onClick={scrollToContactMe}/>
             </div>
         </div>
     )
+}
+
+function scrollToContactMe() {
+    const elementToView = document.getElementById("contactMe");
+    elementToView.scrollIntoView();
 }
 
 export default Projects
