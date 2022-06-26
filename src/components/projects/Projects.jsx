@@ -12,7 +12,7 @@ const Projects = () => {
     return (
         <div>
             <div className='title flex justify-center'>
-                <h1 className='text-3xl font-mono'>Projects</h1>
+                <h1 className='text-3xl'>Projects</h1>
             </div>
             <div className='projects flex flex-col gap-y-10 pt-16 lg:flex-col lg:justify-around lg:gap-x-0 xl:flex-row xl:justify-around'>
                 <Project projectName="Pick Me Up" projectDescription="A carpooling and delivery mobile app based in Lebanon."

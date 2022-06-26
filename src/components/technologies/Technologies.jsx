@@ -4,12 +4,12 @@ import './Technologies.css'
 
 const Technologies = () => {
 
-    const containerStyle = 'container font-mono bg-slate-700 text-slate-300 mx-auto h-auto text-center rounded-2xl p-5 max-w-sm shadow-2xl lg:text-xl';
+    const containerStyle = 'container bg-slate-700 text-slate-300 mx-auto h-auto rounded-2xl p-5 max-w-sm shadow-2xl lg:text-xl';
 
     return (
         <div className='technologies'>
             <div className='title flex justify-center'>
-                <h1 className='text-3xl font-mono'>Languages and Tools</h1>
+                <h1 className='text-3xl'>Languages and Tools</h1>
             </div>
             <div className=' flex flex-col gap-y-10 pt-16 lg:flex-col lg:justify-around lg:gap-x-0 xl:flex-row xl:justify-around'>
                 <div className={containerStyle}>
@@ -47,7 +47,7 @@ const Technologies = () => {
                     </ul>
                 </div>
             </div>
-            <div className='flex justify-center p-28'>
+            <div className='flex p-28 justify-center'>
                 <BsChevronDown id="projects" size='1.5rem' onClick={scrollToProjects}/>
             </div>
         </div>
