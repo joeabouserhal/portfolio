@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react"
+import { motion } from 'framer-motion'
 import './Project.css'
 
 const Project = ({ projectName, projectDescription, projectImageURL, technologies, projectURL }) => {
@@ -10,7 +11,9 @@ const Project = ({ projectName, projectDescription, projectImageURL, technologie
             <div className={containerStyle}>
                 <div className="w-30 h-30 rounded-xl flex justify-center">
                     <a href={projectURL} target="_blank">
-                        <img className="rounded-xl transition hover:scale-90" src={projectImageURL} />
+                        <motion.img
+                            whileHover={{ scale: 0.9, rotateZ: 2 }} className="rounded-xl" src={projectImageURL} />
+
                     </a>
                 </div>
                 <h3 className="title text-2xl p-2 underline-dotted">{projectName}</h3>

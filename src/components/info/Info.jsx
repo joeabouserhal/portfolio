@@ -1,6 +1,7 @@
 import React from 'react'
 import ProfilePicture from '../../assets/Profile Picture.jpeg'
 import { BsInstagram, BsGithub, BsLinkedin, BsFillFilePersonFill, BsChevronDown } from 'react-icons/bs'
+import { motion } from 'framer-motion'
 import Typical from 'react-typical'
 import './Info.css'
 
@@ -8,6 +9,9 @@ const linkStyle = "hover:text-slate-500 transition hover:scale-110 cursor-pointe
 
 
 const Info = () => {
+
+const linkMotion = {scale: 1.2, y: -10}
+
     return (
         <div className='info'>
             <div className='flex-col'>
@@ -22,13 +26,25 @@ const Info = () => {
             </div>
             <div className=' pt-20 lg:pt-8'>
                 <ul className='justify-center flex gap-4'>
-                    <li /><a href='https://github.com/joeabouserhal' target="_blank"><BsGithub size="2rem" className={linkStyle} /></a>
-                    <li /><a href='https://www.linkedin.com/in/joe-abou-serhal-9b90361bb/'><BsLinkedin size="2rem" className={linkStyle} /></a>
-                    <li className='border border-white' /><a href='https://drive.google.com/file/d/1MmOSuEc3MFKFfCdN0Xgvbb92gRJl89R6/view?usp=sharing' target="_blank" className={linkStyle + 'border border-white flex gap-2 font-mono'}><BsFillFilePersonFill size="2rem" className={linkStyle} />My CV</a>
+                    <li />
+                    <motion.a
+                    whileHover={linkMotion}>
+                        <a href='https://github.com/joeabouserhal' target="_blank"><BsGithub size="2rem" className={linkStyle} /></a>
+                    </motion.a>
+                    <li />
+                    <motion.a
+                    whileHover={linkMotion}>
+                        <a href='https://www.linkedin.com/in/joe-abou-serhal-9b90361bb/'><BsLinkedin size="2rem" className={linkStyle} /></a>
+                    </motion.a>
+                    <li className='border border-white' />
+                    <motion.a
+                    whileHover={linkMotion}>
+                        <a href='https://drive.google.com/file/d/1MmOSuEc3MFKFfCdN0Xgvbb92gRJl89R6/view?usp=sharing' target="_blank" className={linkStyle + 'border border-white flex gap-2 font-mono'}><BsFillFilePersonFill size="2rem" className={linkStyle} />My CV</a>
+                    </motion.a>
                 </ul>
             </div>
             <div className='flex justify-center p-28'>
-                <BsChevronDown id="aboutMe" size='1.5rem' onClick={scrollToAboutMe}/>
+                <BsChevronDown id="aboutMe" size='1.5rem' onClick={scrollToAboutMe} />
             </div>
             <div className='flex'>
                 <p className='container flex text-md font-mono bg-slate-700 text-slate-300 mx-auto rounded-2xl p-4 max-w-md shadow-2xl lg:text-xl'>
@@ -37,7 +53,7 @@ const Info = () => {
                 </p>
             </div>
             <div className='flex justify-center p-28'>
-                <BsChevronDown id="technologies" size='1.5rem' onClick={scrollToTechnologies}/>
+                <BsChevronDown id="technologies" size='1.5rem' onClick={scrollToTechnologies} />
             </div>
         </div>
     )

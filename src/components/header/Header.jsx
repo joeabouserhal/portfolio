@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { GrMenu } from 'react-icons/gr'
 import { FiMenu, FiX } from 'react-icons/fi'
+import { motion } from 'framer-motion'
 import './Header.css'
 
-var navBarItemStyle = 'navbar-item flex text-md font-mono p-0.5 text-white cursor-pointer hover:text-slate-500 transition hover:scale-125 hover:text-opacity-90';
+var navBarItemStyle = 'navbar-item flex text-md font-mono p-0.5 text-white cursor-pointer hover:text-slate-500 hover:text-opacity-90';
 
 const Header = () => {
 
@@ -19,8 +20,16 @@ const Header = () => {
                     <div className='invisible md:visible lg:visible absolute right-5'>
                         <ul className='flex gap-5'>
                             <GrMenu className='right-2 block md:hidden lg:hidden' />
-                            <li /><a onClick={scrollToAboutMe} className={navBarItemStyle}>About Me.</a>
-                            <li /><a onClick={scrollToContactMe} className={navBarItemStyle}>Contact Me.</a>
+                            <li />
+                            <motion.a
+                                whileHover={{ scale: 1.4 }}>
+                                <a onClick={scrollToAboutMe} className={navBarItemStyle}>About Me.</a>
+                            </motion.a>
+                            <li />
+                            <motion.a
+                                whileHover={{ scale: 1.4 }}>
+                                <a onClick={scrollToContactMe} className={navBarItemStyle}>Contact Me.</a>
+                            </motion.a>
                         </ul>
                     </div>
                     <div className='flex justify-end'>
