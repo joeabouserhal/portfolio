@@ -15,21 +15,25 @@ const Info = () => {
     const linkMotion = { scale: 1.2, y: -10 }
 
     return (
-        <div className='info'>
-            <div className='flex-col pt-12 md:pt-0'>
+        <div className='info h-[100vh] content-center'>
+            <div className='flex-col pt-[2vh]'>
                 <p className='text-slate-400 text-md'>Hi, I am</p>
-                <Typical className=' text-white text-2xl lg:text-4xl md:text-4xl p-1'
-                    steps={['Joe Abou Serhal 👋', 500]}
+                <Typical className=' text-white text-2xl lg:text-4xl md:text-4xl'
+                    steps={['Joe Abou Serhal 👋']}
                     wrapper="p"
                 />
-                <IntroText/>
+                <IntroText />
             </div>
             <Zoom>
-                <div className='hero container flex mx-auto justify-center pt-16 lg:pt-9'>
-                    <img className="rounded-full w-72 lg:w-72" src={ProfilePicture} />
+                <div className='hero container flex mx-auto justify-center py-[3vh]'>
+                    <motion.img
+                        src={ProfilePicture}
+                        whileHover={{ scale: 1.1 }}
+                        className="rounded-full w-[35vh]"
+                    />
                 </div>
             </Zoom>
-            <div className='mt-20 lg:mt-8'>
+            <div className='py-[3vh]'>
                 <ul className='justify-center flex gap-4'>
                     <li />
                     <motion.a
@@ -48,7 +52,7 @@ const Info = () => {
                     </motion.a>
                 </ul>
             </div>
-            <div className='flex justify-center py-52 md:p-36'>
+            <div className='flex justify-center pt-[5vh]'>
                 <BsChevronDown id="technologies" size='1.5rem' onClick={scrollToTechnologies} />
             </div>
         </div>
