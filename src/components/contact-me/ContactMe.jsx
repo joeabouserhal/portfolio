@@ -20,7 +20,7 @@ const ContactMe = () => {
                     </a>
                 </div>
                 <div>
-                    <p className="text-md p-5 lg:w-64">Talk to me on Instagram</p>
+                    <p className="text-md p-5 lg:w-64">DM me on Instagram</p>
                     <a className="flex align-middle justify-center" target="_blank" href="https://www.instagram.com/joe.abou.serhal/">
                         <motion.div whileHover={{ scale: 1.2 }}>
 
