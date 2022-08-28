@@ -1,5 +1,4 @@
 import React from 'react'
-import { BsChevronDown } from 'react-icons/bs'
 import { Fade } from 'react-reveal'
 import './Technologies.css'
 
@@ -8,7 +7,7 @@ const Technologies = () => {
     const containerStyle = 'container bg-slate-700 text-slate-300 mx-auto h-auto rounded-2xl p-5 max-w-sm shadow-2xl lg:text-xl';
 
     return (
-        <div className='technologies'>
+        <div id="technologies" className='technologies'>
             <Fade bottom>
                 <div className='title flex justify-center'>
                     <h1 className='text-3xl'>Languages and Tools</h1>
@@ -50,16 +49,8 @@ const Technologies = () => {
                     </div>
                 </div>
             </Fade>
-            <div className='flex p-28 justify-center'>
-                <BsChevronDown id="projects" size='1.5rem' onClick={scrollToProjects} />
-            </div>
         </div>
     )
-}
-
-function scrollToProjects() {
-    const elementToView = document.getElementById("projects");
-    elementToView.scrollIntoView();
 }
 
 export default Technologies

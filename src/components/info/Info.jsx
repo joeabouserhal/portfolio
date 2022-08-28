@@ -1,11 +1,12 @@
 import React from 'react'
 import ProfilePicture from '../../assets/Profile Picture.jpeg'
-import { BsGithub, BsLinkedin, BsFillFilePersonFill, BsChevronDown } from 'react-icons/bs'
+import { BsGithub, BsLinkedin, BsFillFilePersonFill } from 'react-icons/bs'
 import { motion } from 'framer-motion'
 import { Zoom } from 'react-reveal'
 import Typical from 'react-typical'
 import './Info.css'
 import IntroText from './IntroText'
+import Chevron from '../shared/Chevron'
 
 const linkStyle = "hover:text-slate-500 transition hover:scale-110 cursor-pointer";
 
@@ -13,6 +14,11 @@ const linkStyle = "hover:text-slate-500 transition hover:scale-110 cursor-pointe
 const Info = () => {
 
     const linkMotion = { scale: 1.2, y: -10 }
+
+    let scrollToTechnologies = () => {
+        const elementToView = document.getElementById("technologies");
+        elementToView.scrollIntoView();
+      }
 
     return (
         <div className='info h-[100vh] content-center'>
@@ -52,21 +58,9 @@ const Info = () => {
                     </motion.a>
                 </ul>
             </div>
-            <div className='flex justify-center pt-[5vh]'>
-                <BsChevronDown id="technologies" size='1.5rem' onClick={scrollToTechnologies} />
-            </div>
+            <Chevron func={scrollToTechnologies}/>
         </div>
     )
-}
-
-function scrollToAboutMe() {
-    const elementToView = document.getElementById("aboutMe");
-    elementToView.scrollIntoView();
-}
-
-function scrollToTechnologies() {
-    const elementToView = document.getElementById("technologies");
-    elementToView.scrollIntoView();
 }
 
 export default Info
