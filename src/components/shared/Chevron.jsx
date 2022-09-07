@@ -1,16 +1,20 @@
-import React from 'react'
-import {BsChevronDown} from 'react-icons/bs'
+import React from 'react';
+import { BsChevronDown } from 'react-icons/bs';
 
-const Chevron = ({func}) => {
-    return (
-        <div className='flex justify-center p-10'>
-            <BsChevronDown size='1.5rem' onClick={func} className="hover:cursor-pointer"/>
-        </div>
-    )
-}
+const Chevron = ({ func }) => {
+  return (
+    <div className="flex justify-center p-10">
+      <BsChevronDown
+        size="1.5rem"
+        onClick={func}
+        className="hover:cursor-pointer"
+      />
+    </div>
+  );
+};
 
 Chevron.defaultProps = {
-    func: () => {}
-}
+  func: () => {},
+};
 
-export default Chevron
+export default Chevron;

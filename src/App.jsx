@@ -12,12 +12,12 @@ function App() {
     const elementToView = document.getElementById("contactMe");
     elementToView.scrollIntoView();
   }
-  
+
   let scrollToTechnologies = () => {
     const elementToView = document.getElementById("technologies");
     elementToView.scrollIntoView();
   }
-  
+
   let scrollToProjects = () => {
     const elementToView = document.getElementById("projects");
     elementToView.scrollIntoView();
@@ -25,14 +25,14 @@ function App() {
 
   return (
     <div className="App">
-      <Header/> 
-      <Info/>
-      <Technologies/>
-      <Chevron func={() => scrollToProjects()}/>
-      <Projects/>
-      <Chevron func={() => scrollToContactMe()}/>
-      <ContactMe/>
-      <Footer/>
+      <Header />
+      <Info />
+      <Technologies />
+      <Chevron func={() => scrollToProjects()} />
+      <Projects />
+      <Chevron func={() => scrollToContactMe()} />
+      <ContactMe />
+      <Footer />
     </div>
   )
 }
