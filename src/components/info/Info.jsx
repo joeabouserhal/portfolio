@@ -20,7 +20,7 @@ const Info = () => {
   };
 
   return (
-    <div className="info h-[100vh] content-center">
+    <div className="info h-[100vh] pt-[10vh] content-center" id='aboutMe'>
       <div className="flex-col pt-[2vh]">
         <p className="text-slate-400 text-md">Hi, I am</p>
         <Typical
@@ -39,7 +39,7 @@ const Info = () => {
           />
         </div>
       </Zoom>
-      <div className="py-[3vh]">
+      <div className="pt-[3vh]">
         <ul className="justify-center flex gap-4">
           <li />
           <motion.a whileHover={linkMotion}>

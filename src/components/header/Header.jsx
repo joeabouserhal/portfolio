@@ -11,13 +11,13 @@ const Header = () => {
   const [navBarOpen, setNavBarOpen] = useState(false);
 
   return (
-    <header className="header">
-      <nav className="relative navbar flex flex-col p-4 gap-20">
+    <header className="header w-full fixed backdrop-blur-md shadow-sm">
+      <nav className="navbar flex flex-col p-4 gap-20">
         <div className="flex">
           <div className="title">
             <p className="text-xl font-mono text-white">Portfolio.</p>
           </div>
-          <div className="invisible md:visible lg:visible absolute right-5">
+          <div className="invisible md:visible lg:visible absolute right-10">
             <ul className="flex gap-5">
               <GrMenu className="right-2 block md:hidden lg:hidden" />
               <li />

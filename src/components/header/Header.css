@@ -1,4 +1,9 @@
 header {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    z-index: 1;
+}
+.nav {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
 }
