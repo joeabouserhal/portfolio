@@ -31,7 +31,7 @@ const Info = () => {
         <IntroText />
       </div>
       <Zoom>
-        <div className="hero container flex mx-auto justify-center py-[3vh]">
+        <div className="hero container flex w-[35vh] mx-auto justify-center py-[3vh]">
           <motion.img
             src={ProfilePicture}
             whileHover={{ scale: 1.1 }}
