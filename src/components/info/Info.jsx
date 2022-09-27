@@ -31,11 +31,11 @@ const Info = () => {
         <IntroText />
       </div>
       <Zoom>
-        <div className="hero container flex w-[35vh] h-[35] mx-auto justify-center py-[3vh]">
+        <div className="hero container flex mx-auto h-auto justify-center py-[3vh]">
           <motion.img
             src={ProfilePicture}
             whileHover={{ scale: 1.1 }}
-            className="rounded-full w-[35vh]"
+            className="rounded-full w-[35vh] h-[35vh] inline"
           />
         </div>
       </Zoom>
