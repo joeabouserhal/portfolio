@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <header className="header w-full fixed backdrop-blur-md shadow-sm">
-      <nav className="navbar flex flex-col p-4 gap-20">
+      <nav className="navbar flex flex-col p-4 gap-5">
         <div className="flex">
           <div className="title">
             <p className="text-xl font-mono text-white">Portfolio.</p>
