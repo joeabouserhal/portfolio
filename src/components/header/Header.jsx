@@ -21,16 +21,20 @@ const Header = () => {
             <ul className="flex gap-5">
               <GrMenu className="right-2 block md:hidden lg:hidden" />
               <li />
-              <motion.a whileHover={{ scale: 1.4 }}>
-                <a onClick={scrollToAboutMe} className={navBarItemStyle}>
-                  About Me.
-                </a>
+              <motion.a
+                whileHover={{ scale: 1.4 }}
+                onClick={scrollToAboutMe}
+                className={navBarItemStyle}
+              >
+                About Me.
               </motion.a>
               <li />
-              <motion.a whileHover={{ scale: 1.4 }}>
-                <a onClick={scrollToContactMe} className={navBarItemStyle}>
-                  Contact Me.
-                </a>
+              <motion.a
+                whileHover={{ scale: 1.4 }}
+                onClick={scrollToContactMe}
+                className={navBarItemStyle}
+              >
+                Contact Me.
               </motion.a>
             </ul>
           </div>
