@@ -25,8 +25,8 @@ const Info = () => {
         <p className="text-slate-400 text-md">Hi, I am</p>
         <Typical
           className=" text-white text-2xl lg:text-4xl md:text-4xl"
-          steps={['Joe Abou Serhal 👋']}
-          wrapper="p"
+          loop={Infinity}
+          steps={['', 1000, 'Joe Abou Serhal 👋',3000]}
         />
         <IntroText />
       </div>
