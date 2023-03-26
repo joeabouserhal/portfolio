@@ -3,6 +3,7 @@ import { Fade } from 'react-reveal';
 import Project from './Project';
 import PickMeUpPhoto from '../../assets/PickMeUp.png';
 import PortfolioPhoto2 from '../../assets/Portfolio no Photo.png';
+import BugHunterPhoto from '../../assets/Bug Hunter.png';
 import './Projects.css';
 
 const Projects = () => {
@@ -26,6 +27,13 @@ const Projects = () => {
             technologies={['Vite', 'React', 'TailwindCSS']}
             projectImageURL={PortfolioPhoto2}
             projectURL="https://github.com/joeabouserhal/portfolio"
+          />
+          <Project
+            projectName="Bug Hunter"
+            projectDescription="A bug bounty website"
+            technologies={['TypeScript', 'React', 'TailwindCSS']}
+            projectImageURL={BugHunterPhoto}
+            projectURL="https://www.bughunter.network/"
           />
         </div>
       </Fade>
